@@ -1,4 +1,4 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env node
 
 /**
  * This is a script for parsing the color mappings from MapArtCraft (https://github.com/rebane2001/mapartcraft/blob/master/src/components/mapart/json/coloursJSON.json)
@@ -47,4 +47,4 @@ const final = Object.entries(data as any).reduce((palette: any[], [id, item]: an
   return palette;
 }, []);
 
-console.log(JSON.stringify(final));
+console.log(JSON.stringify(final, null, 2));
