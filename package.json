@@ -9,6 +9,9 @@
     "watch": "pnpm build:packages && cd interface && pnpm watch",
     "test": "vitest"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "devDependencies": {
     "vitest": "^0.25.7",
     "@types/node": "^18.11.12",
